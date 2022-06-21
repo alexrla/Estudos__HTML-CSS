@@ -17,6 +17,10 @@ body    {
     font-weight: 400;
 }
 
+a   {
+    text-decoration: none;
+}
+
 .section-heading    {
     color: #FFF;
 
@@ -33,6 +37,146 @@ body    {
     text-transform: capitalize;
 }
 /* </Base> */
+
+/* <NavBar> */
+.navbar     {
+    align-items: center;
+
+    background-color: #000;
+
+    box-shadow: .2rem .2rem .2rem #000;
+
+    display: flex;
+
+    height: 14rem;
+
+    justify-content: center;
+
+    position: fixed;
+
+    top: -14rem;
+
+    transition: top .4s;
+
+    width: 100%;
+
+    z-index: 2;
+}
+
+.navbar.change  {
+    top: 0;
+
+    transition: top .4s .2s;
+}
+
+.navbar-link    {
+    align-items: center;
+
+    color: #AAA;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    margin: 0 4rem;
+
+    opacity: 0;
+
+    transition: color .3s, opacity .2s;
+}
+
+.navbar-link:hover  {
+    color: #FFF;
+}
+
+.change .navbar-link    {
+    opacity: 1;
+}
+
+.change .navbar-link:nth-child(1)   {
+    transition: opacity .4s .5s, color .3s;
+}
+
+.change .navbar-link:nth-child(2)   {
+    transition: opacity .4s .6s, color .3s;
+}
+
+.change .navbar-link:nth-child(3)   {
+    transition: opacity .4s .7s, color .3s;
+}
+
+.change .navbar-link:nth-child(4)   {
+    transition: opacity .4s .8s, color .3s;
+}
+
+.change .navbar-link:nth-child(5)   {
+    transition: opacity .4s .9s, color .3s;
+}
+
+.navbar-link i  {
+    font-size: 7rem;
+}
+
+.navbar-link span   {
+    font-size: 2.5rem;
+
+    font-weight: 900;
+
+    letter-spacing: .5rem;
+
+    margin-top: .5rem;
+}
+
+.menu::before   {
+    background-color: #000;
+
+    box-shadow: .1rem 0 .1rem #000;
+
+    content: "";
+
+    height: 15rem;
+
+    left: calc(50% - .15rem);
+
+    position: absolute;
+
+    top: -15rem;
+
+    width: .3rem;
+}
+
+.menu   {
+    background-color: #000;
+
+    border-radius: 30rem 30rem 15rem 15rem;
+
+    box-shadow: 
+            .1rem .1rem .1rem #000,
+            -.1rem -.1rem .1rem #000;
+
+    cursor: pointer;
+
+    height: 6rem;
+
+    left: 5rem;
+
+    position: fixed;
+
+    top: 1rem;
+
+    transition: top .4s .2s;
+
+    width: 4rem;
+}
+
+.menu.change    {
+    top: 15rem;
+
+    transition: top .4s;
+}
+/* </NavBar> */
 
 /* <Section__1> */
 .section-1  {
@@ -487,7 +631,7 @@ body    {
     position: absolute;
 
     text-align: center;
-    
+
     width: 100%;
 }
 /* </Section__4> */
