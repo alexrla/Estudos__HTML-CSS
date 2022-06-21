@@ -215,3 +215,171 @@ body    {
     width: 70%;
 }
 /* </Section__2> */
+
+/* <Section__3> */
+.section-3 {
+    background-color: #333;
+
+    padding: 5rem 0;
+}
+
+.plates-gallery {
+    align-items: center;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+
+    margin-top: 10rem;
+}
+
+.plates-gallery-link::before    {
+    background-color: #FFF;
+
+    content: "";
+    
+    height: 0;
+
+    left: 80%;
+
+    position: absolute;
+
+    top: 2vw;
+
+    transition: height .5s;
+
+    width: .2rem;
+
+    z-index: 1;
+}
+
+.plates-gallery-link:hover::before  {
+    height: 80%;
+}
+
+.plates-gallery-link    {
+    margin: 4rem 1rem;
+
+    position: relative;
+}
+
+.plates-gallery-link::after    {
+    background-color: #FFF;
+
+    content: "";
+    
+    height: .2rem;
+
+    left: 2rem;
+    
+    position: absolute;
+
+    top: 30%;
+
+    transition: width .5s;
+
+    width: 0;
+}
+
+.plates-gallery-link:hover::after  {
+    width: 90%;
+}
+
+.plates-gallery-image   {
+    box-shadow: 
+            .3rem .3rem .1rem #E92929,
+            .5rem .5rem .1rem #A2E946,
+            .7rem .7rem .1rem #297CE9,
+            .9rem .9rem .1rem #E92999;
+
+    height: 15vw;
+
+    object-fit: cover;
+
+    transition: all .5s;
+
+    width: 24vw;
+}
+
+.plates-gallery-link:hover .plates-gallery-image    {
+    box-shadow: 
+            1rem 1rem .1rem #E92929,
+            2rem 2rem .1rem #A2E946,
+            3rem 3rem .1rem #297CE9,
+            4rem 4rem .1rem #E92999;
+    
+    filter: blur(.5rem);
+
+    opacity: .5;
+
+    transform: scale(1.1);
+}
+
+.plates-gallery-name    {
+    color: #FFF;
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    left: 3rem;
+
+    letter-spacing: .1rem;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    text-transform: uppercase;
+
+    top: 3rem;
+
+    transition: width .3s;
+
+    width: 0;
+}
+
+.plates-gallery-link:hover .plates-gallery-name  {
+    transition: width 1.5s .5s;
+
+    width: 100%;
+}
+
+.plates-gallery-description {
+    bottom: 3vw;
+
+    color: #FFF;
+
+    font-size: 1.5rem;
+
+    font-weight: 300;
+
+    left: 2rem;
+
+    letter-spacing: .1rem;
+
+    opacity: 0;
+
+    position: absolute;
+
+    text-transform: uppercase;
+
+    transition: opacity .3s;
+
+    visibility: hidden;
+
+    width: 70%;
+}
+
+.plates-gallery-link:hover .plates-gallery-description  {
+    opacity: 1;
+
+    text-align: justify;
+    
+    transition: opacity 1s 1s;
+
+    visibility: visible;
+}
+/* </Section__3> */
