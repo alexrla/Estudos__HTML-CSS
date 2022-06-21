@@ -16,6 +16,22 @@ body    {
 
     font-weight: 400;
 }
+
+.section-heading    {
+    color: #FFF;
+
+    font-size: 12rem;
+
+    font-weight: 900;
+
+    letter-spacing: .5rem;
+
+    text-align: center;
+
+    text-shadow: .3rem .3rem .3rem #000;
+
+    text-transform: capitalize;
+}
 /* </Base> */
 
 /* <Section__1> */
@@ -33,22 +49,6 @@ body    {
     justify-content: space-evenly;
 
     width: 100%;
-}
-
-.section-heading    {
-    color: #FFF;
-
-    font-size: 12rem;
-
-    font-weight: 900;
-
-    letter-spacing: .5rem;
-
-    text-align: center;
-
-    text-shadow: .3rem .3rem .3rem #000;
-
-    text-transform: capitalize;
 }
 
 .section-1-icons i   {
@@ -71,3 +71,147 @@ body    {
     transition: transform .5s .5s;
 }
 /* </Section__1> */
+
+/* <Section__2> */
+.section-2  {
+    background-color: #222;
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100vh;
+
+    justify-content: space-between;
+
+    padding: 10rem 0;
+
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+.card::before {
+    background-color: #817824;
+
+    box-shadow: -.1rem -.1rem .1rem #000;
+
+    content: "";
+
+    height: 100%;
+
+    left: -1rem;
+
+    position: absolute;
+
+    top: 0;
+
+    transform: skewY(45deg);
+
+    transform-origin: right;
+
+    width: 1rem;
+}
+
+.card   {
+    align-items: center;
+
+    background-color: #A79A2D;
+
+    box-shadow: 1rem 1rem 1rem #000;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 4rem;
+
+    position: relative;
+
+    transform: rotateY(20deg) skewX(-2deg);
+
+    transition: transform .5s, box-shadow .5s;
+
+    width: 30rem;
+}
+
+.card::after {
+    background-color: #8F8317;
+
+    box-shadow: -.1rem -.1rem .1rem #000;
+    
+    content: "";
+
+    height: 1rem;
+
+    left: 0;
+
+    position: absolute;
+
+    top: -1rem;
+
+    transform: skewX(45deg);
+
+    transform-origin: bottom;
+
+    width: 100%;
+}
+
+.card:hover     {
+    box-shadow: 2rem 2rem 2rem #000;
+
+    transform: rotateY(20deg) skewX(-2deg) translateY(-3rem);
+}
+
+.card-image   {
+    width: 100%;
+}
+
+.card-name  {
+    color: #111;
+
+    font-size: 3rem;
+
+    font-weight: 900;
+
+    letter-spacing: .5rem;
+
+    margin: 2rem 0;
+
+    text-shadow: .15rem .15rem .15rem #000;
+
+    text-transform: uppercase;
+}
+
+.card-button    {
+    background-color: #111;
+
+    border: none;
+
+    border-radius: 5rem;
+
+    box-shadow: -.2rem -.2rem .2rem #000 ;
+
+    color: #888;
+
+    cursor: pointer;
+
+    font-size: 1.5rem;
+
+    font-weight: 800;
+
+    letter-spacing: .2rem;
+
+    padding: .5rem;
+
+    text-transform: capitalize;
+
+    width: 70%;
+}
+/* </Section__2> */

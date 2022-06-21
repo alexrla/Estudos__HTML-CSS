@@ -1,2 +1,3 @@
 - **`Element.nextElementSibling`: retorna o elemento seguinte, após o especificado, na lista de filhos (ou null, se o elemento especificado for o último);**
+- **`transform: skew()`: define uma transformação que distorce um elemento no plano 2d;**
 - **
