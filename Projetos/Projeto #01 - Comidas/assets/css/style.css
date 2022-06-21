@@ -169,6 +169,8 @@ a   {
     transition: top .4s .2s;
 
     width: 4rem;
+
+    z-index: 2;
 }
 
 .menu.change    {
@@ -376,7 +378,7 @@ a   {
 
     justify-content: space-evenly;
 
-    margin-top: 10rem;
+    margin-top: 6rem;
 }
 
 .plates-gallery-link::before    {
@@ -635,3 +637,113 @@ a   {
     width: 100%;
 }
 /* </Section__4> */
+
+/* <Mobile> */
+@media (max-width: 1400px)  {
+    html    {
+        font-size: 50%;
+    }
+
+    .section-2  {
+        height: auto;
+
+        padding: 10rem 0 12rem;
+    }
+
+    .card-container    {
+        margin-top: 6rem;
+    }
+
+    .plates-gallery-link    {
+        height: 25rem;
+
+        margin: 5rem;
+
+        width: 40rem;
+    }
+
+    .plates-gallery-image   {
+        height: 100%;
+
+        width: 100%;
+    }
+}
+
+@media(max-width: 1000px)   {
+    .section-heading    {
+        font-size: 9rem;
+
+        margin: 0 5rem;
+    }
+
+    .section-1-icons i  {
+        font-size: 25rem;
+    }
+
+    .card-container     {
+        flex-wrap: wrap;
+    }
+
+    .card   {
+        margin: 5rem;
+    }
+
+    .section-4  {
+        height: 30rem;
+    }
+}
+
+@media (max-width: 900px)   {
+    .navbar-link    {
+        margin: 2rem;
+    }
+
+    .navbar-link i  {
+        font-size: 4rem;
+    }
+
+    .navbar-link span   {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 700px)   {
+    .section-heading    {
+        font-size: 7rem;
+
+        margin: 0 10rem;
+    }
+
+    .section-1-icons i  {
+        font-size: 20rem;
+    }
+
+    .menu   {
+        left: 2rem;
+    }
+
+    .section-4  {
+        align-items: center;
+
+        flex-direction: column;
+
+        height: 40rem;
+
+        justify-content: flex-start;
+    }
+
+    .section-4-text     {
+        margin-bottom: 8rem;
+    }
+}
+
+@media (max-width: 550px)   {
+    html    {
+        font-size: 40%;
+    }
+
+    .navbar-link    {
+        margin: 0 .7rem;
+    }
+}
+/* </Mobile> */
