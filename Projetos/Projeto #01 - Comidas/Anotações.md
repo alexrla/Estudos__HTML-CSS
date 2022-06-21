@@ -1,0 +1,2 @@
+- **`Element.nextElementSibling`: retorna o elemento seguinte, após o especificado, na lista de filhos (ou null, se o elemento especificado for o último);**
+- **
