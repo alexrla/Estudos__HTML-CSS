@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex-direction</title>
+
+        <style>
+            body    {
+                background-color: #222;
+
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            div  {
+                color: #FFF;
+
+                font-size: 40px;
+
+                margin: 10px;
+
+                padding: 10px;
+            }
+
+            .flex   {
+                display: flex;
+
+                margin-top: 80px;
+            }
+
+            .container:nth-child(1) {
+                flex-direction: row;
+            }
+
+            .container:nth-child(1), .container:nth-child(1) div {
+                border: 5px solid #4864DD;
+            }
+
+            .container:nth-child(2) {
+                flex-direction: column;
+            }
+
+            .container:nth-child(2), .container:nth-child(2) div {
+                border: 5px solid #C5514B;
+            }
+
+            .container:nth-child(3) {
+                flex-direction: row-reverse;
+            }
+
+            .container:nth-child(3), .container:nth-child(3) div {
+                border: 5px solid #EDA9A2;
+            }
+
+            .container:nth-child(4) {
+                flex-direction: column-reverse;
+            }
+
+            .container:nth-child(4), .container:nth-child(4) div {
+                border: 5px solid #B2DD9D;
+            }
+
+            a   {
+                background-color: #FFF;
+
+                border-radius: 5px;
+
+                color: #1D2DD7;
+
+                padding: 10px;
+
+                position: fixed;
+
+                text-decoration: none;
+
+                top: 10px;
+            }
+
+            a:hover {
+                background-color: #1D2DD7;
+
+                color: #FFF;
+
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+        
+        <div class="container flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+
+        <div class="container flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+
+        <div class="container flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+
+        <a href="../flexbox.html">Voltar</a>
+    </body>
+</html>

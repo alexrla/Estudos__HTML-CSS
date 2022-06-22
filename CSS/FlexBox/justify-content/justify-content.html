@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Justify-content</title>
+
+        <style>
+            body    {
+                background-color: #222;
+
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            div  {
+                color: #FFF;
+
+                font-size: 40px;
+
+                margin: 10px;
+
+                padding: 10px;
+            }
+
+            .flex   {
+                display: flex;
+
+                margin-top: 80px;
+            }
+            
+            .container:nth-child(1) {
+                justify-content: flex-start;
+            }
+
+            .container:nth-child(1), .container:nth-child(1) div {
+                border: 5px solid #ABCCB5;
+            }
+
+            .container:nth-child(2) {
+                justify-content: flex-end;
+            }
+
+            .container:nth-child(2), .container:nth-child(2) div {
+                border: 5px solid #86B9C3;
+            }
+
+            .container:nth-child(3) {
+                justify-content: center;
+            }
+
+            .container:nth-child(3), .container:nth-child(3) div {
+                border: 5px solid #DF9216;
+            }
+
+            .container:nth-child(4) {
+                justify-content: space-around;
+            }
+
+            .container:nth-child(4), .container:nth-child(4) div {
+                border: 5px solid #6E4477;
+            }
+
+            .container:nth-child(5) {
+                justify-content: space-between;
+            }
+
+            .container:nth-child(5), .container:nth-child(5) div {
+                border: 5px solid #28FEB3;
+            }
+
+            .container:nth-child(6) {
+                justify-content: space-evenly;
+            }
+
+            .container:nth-child(6), .container:nth-child(6) div {
+                border: 5px solid #FB29A7;
+            }
+
+            a   {
+                background-color: #FFF;
+
+                border-radius: 5px;
+
+                color: #1D2DD7;
+
+                padding: 10px;
+
+                position: fixed;
+
+                text-decoration: none;
+
+                top: 10px;
+            }
+
+            a:hover {
+                background-color: #1D2DD7;
+
+                color: #FFF;
+
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+        
+        <div class="container flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+
+        <div class="container flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+
+        <div class="container flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+
+        <div class="container flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+
+        <div class="container flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+
+        <a href="../flexbox.html">Voltar</a>
+    </body>
+</html>

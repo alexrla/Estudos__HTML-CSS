@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Align-self</title>
+
+        <style>
+            *   {
+                box-sizing: border-box;
+            }
+
+            body    {
+                background-color: #222;
+
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .flex-container {
+                display: flex;
+
+                font-size: 40px;
+                
+                height: 300px;
+
+                margin-top: 70px;
+            }
+
+            .flex-container:nth-child(1), .flex-container:nth-child(1) div   {
+                border: 5px solid #A41421;
+            }
+
+            .flex-container:nth-child(2), .flex-container:nth-child(2) div   {
+                border: 5px solid #A9F9D9;
+            }
+
+            .flex-container:nth-child(3), .flex-container:nth-child(3) div   {
+                border: 5px solid #99D1FD;
+            }
+
+            .flex-container:nth-child(4), .flex-container:nth-child(4) div   {
+                border: 5px solid #613890;
+            }
+
+            .flex-container:nth-child(5), .flex-container:nth-child(5) div   {
+                border: 5px solid #6060EB;
+            }
+
+            .flex-container div    {
+                color: #FFF;
+
+                padding: 10px;
+            }
+
+            .big    {
+                font-size: 60px;
+            }
+
+            .flex-container:nth-child(1) div:nth-child(3)    {
+                align-self: stretch;
+
+                background-color: #C93844;
+
+                order: -1;
+            }
+
+            .flex-container:nth-child(2) div:nth-child(3)    {
+                align-self: baseline;
+
+                background-color: #5FD1A3;
+
+                order: -1;
+            }
+
+            .flex-container:nth-child(3) div:nth-child(3)    {
+                align-self: flex-start;
+
+                background-color: #4896D1;
+
+                order: -1;
+            }
+
+            .flex-container:nth-child(4) div:nth-child(3)    {
+                align-self: flex-end;
+
+                background-color: #8E61C2;
+
+                order: -1;
+            }
+
+            .flex-container:nth-child(5) div:nth-child(3)    {
+                align-self: center;
+
+                background-color: #8585EE;
+
+                order: -1;
+            }
+
+            a   {
+                background-color: #FFF;
+
+                border-radius: 5px;
+
+                color: #1D2DD7;
+
+                padding: 10px;
+
+                position: fixed;
+
+                text-decoration: none;
+
+                top: 10px;
+            }
+
+            a:hover {
+                background-color: #1D2DD7;
+
+                color: #FFF;
+
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div class="big">3</div>
+            <div>4</div>
+        </div>
+
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <a href="../flexbox.html">Voltar</a>
+    </body>
+</html>

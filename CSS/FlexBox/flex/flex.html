@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex-basis</title>
+
+        <style>
+            *   {
+                box-sizing: border-box;
+            }
+
+            body    {
+                background-color: #222;
+
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .flex-container {
+                display: flex;
+
+                font-size: 40px;
+
+                margin-top: 70px;
+            }
+
+            .flex-container:nth-child(1), .flex-container:nth-child(1) div   {
+                border: 5px solid #5FC0EB;
+            }
+
+            .flex-container:nth-child(1) div    {
+                flex-basis: 100px;
+            }
+
+            .flex-container:nth-child(2), .flex-container:nth-child(2) div   {
+                border: 5px solid #E45A78;
+            }
+
+            .flex-container:nth-child(2) div    {
+                flex-basis: 300px;
+            }
+
+            .flex-container:nth-child(2) div:nth-child(4)    {
+                flex: 3 6 200px;
+            }
+
+            .flex-container div    {
+                color: #FFF;
+
+                padding: 10px;
+            }
+
+            a   {
+                background-color: #FFF;
+
+                border-radius: 5px;
+
+                color: #1D2DD7;
+
+                padding: 10px;
+
+                position: fixed;
+
+                text-decoration: none;
+
+                top: 10px;
+            }
+
+            a:hover {
+                background-color: #1D2DD7;
+
+                color: #FFF;
+
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <a href="../flexbox.html">Voltar</a>
+    </body>
+</html>
