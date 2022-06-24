@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid-template-columns</title>
+
+        <style>
+            body  {
+                background-color: #222;
+
+                color: #FFF;
+
+                font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            
+                min-height: 100vh;
+            }
+
+            .container  {
+                display: grid;
+
+                grid-template-areas:
+                    'header header'
+                    'nav main'
+                    'footer footer'
+                ;
+
+                height: 100vh;
+
+                grid-template-columns: 200px 1fr;
+
+                grid-template-rows: 1fr 5fr 1fr;
+
+                margin: 80px 40px 40px;
+            }
+
+            header, main, nav, footer   {
+                align-items: center;
+
+                display: flex;
+
+                font-size: 24px;
+
+                font-weight: bold;
+
+                justify-content: center;
+            }
+
+            header  {
+                background-color: #CFCB62;
+
+
+                grid-area: header;
+            }
+
+            main    {
+                background-color: #74B8D0;
+
+
+                grid-area: main;
+            }
+
+            nav    {
+                background-color: #CF63A0;
+
+
+                grid-area: nav;
+            }
+
+            footer    {
+                background-color: #DC2DB3;
+
+
+                grid-area: footer;
+            }
+
+            a   {
+                background-color: #FFF;
+
+                border-radius: 5px;
+
+                color: #1D2DD7;
+
+                padding: 10px;
+
+                position: fixed;
+
+                text-decoration: none;
+
+                top: 10px;
+            }
+
+            a:hover {
+                background-color: #1D2DD7;
+
+                color: #FFF;
+
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <main>MAIN</main>
+            <header>HEADER</header>
+            <footer>FOOTER</footer>
+            <nav>NAV</nav>
+        </div>
+
+        <a href="../grid.html">Voltar</a>
+    </body>
+</html>

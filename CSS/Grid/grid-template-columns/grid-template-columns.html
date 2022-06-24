@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid-template-columns</title>
+
+        <style>
+            body  {
+                background-color: #222;
+
+                font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            }
+
+            .container  {
+                display: grid;
+
+                height: 100vh;
+
+                margin: 80px 40px 40px;
+            }
+
+            .container div  {
+                align-items: center;
+
+                background-color: #FFF;
+
+                display: flex;
+
+                font-size: 30px;
+
+                justify-content: center;
+            }
+
+            .container:nth-child(1) {
+                grid-template-columns: 50% 50%;
+            }
+
+            .container:nth-child(2) {
+                grid-template-columns: repeat(4, 8.33% 8.33% 8.33%);
+            }
+
+            .container:nth-child(3) {
+                grid-template-columns: repeat(4, 8.33%);
+                /* Aqui temos 4 colunas, cada uma com 8.33% */
+            }
+
+            .container:nth-child(4) {
+                grid-template-columns: repeat(11, 100px) 100px;
+                /* 
+                    Aqui temos 11 colunas, cada uma com 100px e
+                    a última, definida fora do repeat, também vai
+                    ter 100px
+                */
+            }
+
+            .container:nth-child(5) {
+                grid-template-columns: 200px 20% 1fr;
+                /* 
+                    Esse 1fr indica que a terceira coluna vai ocupar
+                    todo o espaço retante, após o 200% e os 20%
+                    fr - uma unidade de fração/fragmento
+                */
+            }
+
+            .container:nth-child(6) {
+                grid-template-columns: 3fr 6fr 3fr;
+            }
+
+            .container:nth-child(7) {
+                grid-template-columns: minmax(100px, 300px) minmax(200px, 300px) minmax(300px, 300px);
+            }
+
+            .container:nth-child(1) div     {
+                border: 5px solid #FBE7C7;
+            }
+
+            .container:nth-child(2) div     {
+                border: 5px solid #81DF95;
+            }
+
+            .container:nth-child(3) div     {
+                border: 5px solid #F8383A;
+            }
+
+            .container:nth-child(4) div     {
+                border: 5px solid #6572EC;
+            }
+
+            .container:nth-child(5) div     {
+                border: 5px solid #A2F3FB;
+            }
+
+            .container:nth-child(6) div     {
+                border: 5px solid #50745A;
+            }
+
+            .container:nth-child(7) div     {
+                border: 5px solid #D06243;
+            }
+
+            a   {
+                background-color: #FFF;
+
+                border-radius: 5px;
+
+                color: #1D2DD7;
+
+                padding: 10px;
+
+                position: fixed;
+
+                text-decoration: none;
+
+                top: 10px;
+            }
+
+            a:hover {
+                background-color: #1D2DD7;
+
+                color: #FFF;
+
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+            <div class="d6">6</div>
+            <div class="d7">7</div>
+            <div class="d8">8</div>
+            <div class="d9">9</div>
+            <div class="d10">10</div>
+            <div class="d11">11</div>
+            <div class="d12">12</div>
+        </div>
+
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+            <div class="d6">6</div>
+            <div class="d7">7</div>
+            <div class="d8">8</div>
+            <div class="d9">9</div>
+            <div class="d10">10</div>
+            <div class="d11">11</div>
+            <div class="d12">12</div>
+        </div>
+
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+            <div class="d6">6</div>
+            <div class="d7">7</div>
+            <div class="d8">8</div>
+            <div class="d9">9</div>
+            <div class="d10">10</div>
+            <div class="d11">11</div>
+            <div class="d12">12</div>
+        </div>
+
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+            <div class="d6">6</div>
+            <div class="d7">7</div>
+            <div class="d8">8</div>
+            <div class="d9">9</div>
+            <div class="d10">10</div>
+            <div class="d11">11</div>
+            <div class="d12">12</div>
+        </div>
+
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+            <div class="d6">6</div>
+            <div class="d7">7</div>
+            <div class="d8">8</div>
+            <div class="d9">9</div>
+            <div class="d10">10</div>
+            <div class="d11">11</div>
+            <div class="d12">12</div>
+        </div>
+
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+            <div class="d6">6</div>
+            <div class="d7">7</div>
+            <div class="d8">8</div>
+            <div class="d9">9</div>
+            <div class="d10">10</div>
+            <div class="d11">11</div>
+            <div class="d12">12</div>
+        </div>
+
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+            <div class="d6">6</div>
+            <div class="d7">7</div>
+            <div class="d8">8</div>
+            <div class="d9">9</div>
+            <div class="d10">10</div>
+            <div class="d11">11</div>
+            <div class="d12">12</div>
+        </div>
+
+        <a href="../grid.html">Voltar</a>
+    </body>
+</html>

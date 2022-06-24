@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid-column-start e Grid-column-end</title>
+
+        <style>
+            body  {
+                background-color: #222;
+
+                font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            }
+
+            .container  {
+                display: grid;
+
+                height: 100vh;
+
+                margin: 80px 40px 40px;
+            }
+
+            .container div  {
+                align-items: center;
+
+                background-color: #FFF;
+
+                display: flex;
+
+                font-size: 30px;
+
+                justify-content: center;
+            }
+
+            .container:nth-child(1) {
+                grid-template-columns: 1fr 1fr 1fr;
+
+                grid-template-rows: auto;
+            }
+
+            .d8   {
+                grid-column-end: 4;
+
+                grid-column-start: 2;
+            }
+
+            .container:nth-child(1) div     {
+                border: 5px solid #25D398;
+            }
+
+            a   {
+                background-color: #FFF;
+
+                border-radius: 5px;
+
+                color: #1D2DD7;
+
+                padding: 10px;
+
+                position: fixed;
+
+                text-decoration: none;
+
+                top: 10px;
+            }
+
+            a:hover {
+                background-color: #1D2DD7;
+
+                color: #FFF;
+
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+            <div class="d6">6</div>
+            <div class="d7">7</div>
+            <div class="d8">8</div>
+            <div class="d9">9</div>
+            <div class="d10">10</div>
+            <div class="d11">11</div>
+            <div class="d12">12</div>
+        </div>
+
+        <a href="../grid.html">Voltar</a>
+    </body>
+</html>

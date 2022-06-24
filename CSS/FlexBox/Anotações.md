@@ -10,8 +10,6 @@
 
 ## Propriedades
 
-
-
 ### flex-direction
 - **`flex-direction: row`: elementos em linha (comportamento padrão);**
 - **`flex-direction: column`: elementos em coluna;**
@@ -111,4 +109,17 @@
 ### flex-basis
 
 - **Usado para definir o tamanho de um _flex-item_;**
-- **Quando estamos trabalhando com linha, o tamanho é aplicado a largura dos elementos. Já quando estamos trabalhando com coluna, o tamanho é aplicado a altura dos elementos;**
+- **Quando estamos trabalhando com linha, o tamanho é aplicado a largura dos elementos. Já quando estamos trabalhando com coluna, o tamanho é aplicado a altura dos elementos. Logo, o tamanho diferefe de onde é aplicado, de acordo com o _main axis_;**
+
+
+
+### flex
+
+- **Mistura as propriedades: `flex-grow`, `flex-shrink` e `flex-basis`:**
+  - **`flex: grow shrink basis`;**
+
+
+
+### gap
+
+**Define uma distância entre os elementos do flex-container (os flex-items):**
