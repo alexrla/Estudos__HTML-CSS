@@ -91,3 +91,50 @@ nav     {
 
     color: #FFFFFF;
 }
+
+/* Banner */
+.main-banner    {
+    background-image: url(../img/mainbanner.png);
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    height: calc(100vh - 80px);
+
+    width: 100%;
+}
+
+.overlay    {
+    background-color: rgba(0, 0, 0, 0.2);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    height: 100%;
+
+    justify-content: center;
+
+    width: 100%;
+}
+
+.main-banner h1, .main-banner p {
+    color: #FFFFFF;
+
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.main-banner h1 {
+    font-size: 64px;
+}
+
+.main-banner p  {
+    font-size: 32px;
+}
