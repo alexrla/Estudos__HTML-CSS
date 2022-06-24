@@ -1,0 +1,93 @@
+/* Base */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*   {
+    box-sizing: border-box;
+}
+
+*:focus     {
+    outline: 0;
+}
+
+body    {
+    font-family: 'Roboto', sans-serif;
+}
+
+a   {
+    text-decoration: none;
+}
+
+h1, h2  {
+    color: #333;
+}
+
+p   {
+    color: #70747A;
+}
+
+/* Navbar */
+.navbar-container   {
+    background-color: #232A31;
+
+    height: 80px;
+
+    padding: 0 2em;
+
+    position: relative;
+
+    width: 100%;
+}
+
+nav     {
+    align-items: center;
+
+    display: flex;
+
+    height: 100%;
+
+    justify-content: space-between;
+}
+
+.logo   {
+    width: 50px;
+}
+
+.navbar-items   {
+    display: flex;
+
+    gap: 20px;
+}
+
+.navbar-items li    {
+    text-transform: uppercase;
+}
+
+.navbar-items li a  {
+    color: #FFFFFF;
+
+    transition: .5s;
+}
+
+.navbar-items li a:hover    {
+    color: #CCC;
+}
+
+.navbar-items li .default-btn    {
+    background-color: #FFFFFF;
+
+    border: 3px solid #2CC76A;
+
+    border-radius: 5px;
+
+    color: #2CC76A;
+
+    padding: 15px 20px;
+
+    transition: .5s;
+}
+
+.navbar-items li .default-btn:hover  {
+    background-color: #2CC76A;
+
+    color: #FFFFFF;
+}
