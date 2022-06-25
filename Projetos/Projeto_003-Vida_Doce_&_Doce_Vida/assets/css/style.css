@@ -1,0 +1,95 @@
+/*  Base */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Pacifico&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*   {
+    box-sizing: border-box;
+}
+
+*:focus     {
+    outline: 0;
+}
+
+a   {
+    text-decoration: none;
+}
+
+/* Sidebar */
+.sidebar    {
+    align-items: center;
+
+    background-color: #E25B8F;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 50px;
+
+    height: 100vh;
+
+    padding-top: 40px;
+
+    position: fixed;
+
+    width: 400px;
+}
+
+.logo   {
+    align-items: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.logo img   {
+    width: 150px;
+}
+
+.logo h1   {
+    color: #FFFFFF;
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 32px;
+}
+
+.menu   {
+    width: 100%;
+}
+
+.menu ul    {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.menu li    {
+    height: 60px;
+
+    line-height: 60px;
+}
+
+.menu li a  {
+    color: #FFFFFF;
+
+    display: block;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    padding-left: 80px;
+
+    transition: 0.5s;
+}
+
+.menu li a:hover  {
+    background-color: rgba(0, 0, 0, 0.3);
+}
