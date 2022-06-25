@@ -138,3 +138,64 @@ nav     {
 .main-banner p  {
     font-size: 32px;
 }
+
+/*  Especialidades */
+.specialties-container  {
+    display: flex;
+
+    justify-content: center;
+
+    padding: 5em 0;
+}
+
+.specialties-container ul  {
+    align-items: center;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    width: 90%;
+}
+
+.specialties-container ul li    {
+    display: flex;
+
+    flex: 1 1 200px;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.specialties-container ul li i     {
+    font-size: 60px;
+}
+
+.fa-shield-halved   {
+    color: #2CC76A;
+}
+
+.fa-rocket  {
+    color: #EF3F29;
+}
+
+.fa-comments    {
+    color: #EF8F29;
+}
+
+.specialties-container ul li h2     {
+    font-size: 20px;
+}
+
+.specialties-container ul li p  {
+    font-size: 14px;
+
+    line-height: 24px;
+}
