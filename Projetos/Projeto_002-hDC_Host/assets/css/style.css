@@ -447,6 +447,7 @@ nav     {
 
 .contact-container form input[type=text], .contact-container form input[type=email]    {
     margin: 0 10px 20px;
+
     width: 220px;
 }
 
@@ -499,4 +500,129 @@ footer  {
     text-align: center;
 
     width: 100%;
+}
+
+/* Mobile */
+.occupy     {
+    display: none;
+}
+
+.hamburger  {
+    cursor: pointer;
+
+    display: none;
+}
+
+.line   {
+    background-color: #2CC76A;
+
+    display: block;
+
+    height: 3px;
+
+    margin: 5px auto;
+
+    transition: all 0.3s ease-in-out;
+
+    width: 25px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 546px)   {
+    .navbar-container   {
+        position: fixed;
+
+        top: 0;
+
+        z-index: 1;
+    }
+
+    .occupy {
+        display: block;
+
+        height: 80px;
+    }
+
+    .hamburger  {
+        display: block;
+    }
+
+    .hamburger.active .line:nth-child(2)  {
+        opacity: 0;
+    }
+
+    .hamburger.active .line:nth-child(1)  {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .line:nth-child(3)  {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar-items   {
+        background-color: #232A31;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        height: calc(100vh - 80px);
+
+        left: -100%;
+
+        justify-content: space-around;
+
+        position: fixed;
+
+        text-align: center;
+         
+        top: 80px;
+
+        transition: 0.5s ease-in;
+
+        width: 100%;
+
+        z-index: 2;
+    }
+
+    .navbar-items li    {
+        margin: 20px 0;
+    }
+
+    .navbar-items li a {
+        font-size: 20px;
+    }
+
+    .navbar-items.active    {
+        left: 0;
+    }
+
+    .navbar-items li .default-btn {
+        background: none;
+    
+        border: none;
+    
+        color: #FFFFFF;
+    }
+
+    .navbar-items li .default-btn:hover    {
+        background: none;
+        
+        color: #CCC;
+    }
+}
+
+@media (max-width: 484px)   {
+    .contact-container p    {
+        padding: 0 5px;
+    }
+
+    .contact-container form input[type=text], .contact-container form input[type=email]    {
+        width: 90%;
+    }
+
+    .contact-container form textarea    {
+        width: 90%;
+    }
 }
