@@ -212,7 +212,7 @@ nav     {
 
     justify-content: center;
 
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 .pricing-container h2   {
@@ -333,6 +333,76 @@ nav     {
 
 .plan .recommended-btn:hover   {
     background-color:  #F45C57;
+
+    color: #FFFFFF;
+}
+
+/* Domínio */
+.search-domain-container    {
+    background-color: #34454E;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    justify-content: center;
+
+    margin-bottom: 100px;
+    padding: 5em 0;
+
+    text-align: center;
+}
+
+.search-domain-container h2     {
+    color: #FFFFFF;
+
+    font-size: 42px;
+}
+
+.search-domain-container p  {
+    color: #D5D5D5;
+
+    font-size: 24px;
+}
+
+.search-domain-container input  {
+    border: none;
+
+    border-radius: 5px;
+
+    display: block;
+
+    margin: 0 auto;
+}
+
+.search-domain-container input[type=text]  {
+    font-size: 20px;
+
+    margin-bottom: 25px;
+
+    padding: 20px;
+
+    width: 60%;
+}
+
+.search-domain-container input[type=submit]  {
+    background-color: #FFFFFF;
+
+    border: 2px solid #2CC76A;
+
+    color: #2CC76A;
+
+    cursor: pointer;
+
+    font-size: 24px;
+
+    padding: 15px 30px;
+}
+
+.search-domain-container input[type=submit]:hover  {
+    background-color: #2CC76A;
 
     color: #FFFFFF;
 }
