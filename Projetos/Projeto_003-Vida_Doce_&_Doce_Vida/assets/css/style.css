@@ -9,6 +9,10 @@
     outline: 0;
 }
 
+body    {
+    font-family: 'Roboto', sans-serif;
+}
+
 a   {
     text-decoration: none;
 }
@@ -79,8 +83,6 @@ a   {
 
     display: block;
 
-    font-family: 'Roboto', sans-serif;
-
     font-size: 22px;
 
     font-weight: 500;
@@ -92,4 +94,131 @@ a   {
 
 .menu li a:hover  {
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Content */
+.content    {
+    left: 400px;
+
+    position: absolute;
+
+    width: calc(100% - 400px);
+}
+
+.content h2   {
+    color: #E25B8F;
+
+    padding-bottom: 30px;
+}
+
+section {
+    padding-left: 50px;
+}
+/* Content - Seção Início */
+#secao-inicio   {
+    padding-left: 0;
+}
+
+#secao-inicio::after, #secao-sobreNos::after    {
+    clear: both;
+
+    content: "";
+
+    display: block;
+
+    margin-bottom: 100px;
+}
+
+#secao-inicio .banner   {
+    background-image: url(../img/banner2.jpg);
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    height: 600px;
+}
+
+.secaoinicio-content    {
+    padding-left: 50px;
+}
+
+.secaoinicio-content h2     {
+    font-weight: 500;
+
+    margin-top: 70px;
+
+    font-size: 48px;
+}
+
+.secaoinicio-content .mini-banner   {
+    background-image: url(../img/banner3.jpg);
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    float: left;
+
+    height: 400px;
+
+    width: 300px;
+}
+
+.secaoinicio-content .description   {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+
+    left: 370px;
+
+    padding-right: 40px;
+
+    position: absolute;
+}
+
+.secaoinicio-content .description p     {
+    font-size: 18px;
+
+    line-height: 2;
+
+    margin-left: 25px;
+
+    text-align: justify;
+}
+
+.secaoinicio-content .description a, form input[type=submit]     {
+    background-color: #FFFFFF;
+
+    border: 2px solid #E25B8F;
+
+    border-radius: 5px;
+
+    color: #E25B8F;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    margin-left: 25px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    transition: .5s;
+
+    width: 200px;
+}
+
+.secaoinicio-content .description a:hover, form input[type=submit]:hover   {
+    background-color: #E25B8F;
+
+    color: #FFFFFF;
 }
