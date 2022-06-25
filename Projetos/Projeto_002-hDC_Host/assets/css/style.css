@@ -212,7 +212,7 @@ nav     {
 
     justify-content: center;
 
-    margin-bottom: 100px;
+    padding-bottom: 5em;
 }
 
 .pricing-container h2   {
@@ -317,6 +317,8 @@ nav     {
     height: 75px;
 
     line-height: 75px;
+
+    transition: .5s;
 }
 
 .plan .plan-btn:hover   {
@@ -329,6 +331,8 @@ nav     {
     border: 2px solid #F45C57;
 
     color: #F45C57;
+
+    transition: .5s;
 }
 
 .plan .recommended-btn:hover   {
@@ -349,7 +353,6 @@ nav     {
 
     justify-content: center;
 
-    margin-bottom: 100px;
     padding: 5em 0;
 
     text-align: center;
@@ -399,10 +402,101 @@ nav     {
     font-size: 24px;
 
     padding: 15px 30px;
+
+    transition: .5s;
 }
 
 .search-domain-container input[type=submit]:hover  {
     background-color: #2CC76A;
 
     color: #FFFFFF;
+}
+
+/* Contato */
+.contact-container  {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding-bottom: 2em;
+
+    padding-top: 5em;
+
+    text-align: center;
+}
+
+.contact-container h2   {
+    font-size: 36px;
+}
+
+.contact-container p    {
+    font-size: 20px;
+}
+
+.contact-container form input, .contact-container form textarea {
+    border: 1px solid #CCC;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    padding: 10px 20px;
+}
+
+.contact-container form input[type=text], .contact-container form input[type=email]    {
+    margin: 0 10px 20px;
+    width: 220px;
+}
+
+.contact-container form textarea    {
+    display: block;
+
+    height: 150px;
+
+    margin: 0 auto 20px;
+
+    width: 465px;
+}
+
+.contact-container form input[type=submit]  {
+    background-color: #FFFFFF;
+
+    border: 2px solid #0275D8;
+
+    color: #0275D8;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    transition: .5s;
+
+    width: 200px;
+}
+
+.contact-container form input[type=submit]:hover    {
+    background-color: #0275D8;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+/* Footer */
+footer  {
+    background-color: #232A31;
+
+    color: #D5D5D5;
+
+    font-weight: 700;
+
+    height: 60px;
+
+    line-height: 60px;
+
+    text-align: center;
+
+    width: 100%;
 }
