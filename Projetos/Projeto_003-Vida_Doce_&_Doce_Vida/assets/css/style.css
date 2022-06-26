@@ -9,6 +9,10 @@
     outline: 0;
 }
 
+*::placeholder  {
+    color: #8B8AA2;
+}
+
 body    {
     font-family: 'Roboto', sans-serif;
 }
@@ -240,7 +244,7 @@ section {
 }
 
 /* Content - Seção Doces */
-#secao-doces1 h2, #secao-doces2 h2, #secao-doces3 h2    {
+#secao-doces1 h2, #secao-doces2 h2, #secao-doces3 h2, #secao-contato h2    {
     font-size: 36px;
 
     font-weight: 500;
@@ -326,4 +330,46 @@ section {
 
 #image-12   {
     background-image: url(../img/galeria12.jpg);
+}
+
+/* Content - Seção Contato */
+#secao-contato form     {
+    width: 700px;
+}
+
+#secao-contato form input[type=text], #secao-contato form input[type=email], #secao-contato form textarea    {
+    border: 2px dashed #8B8AA2;
+
+    color: #8B8AA2;
+
+    display: block;
+
+    font-size: 20px;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+
+    width: 100%;
+}
+
+#secao-contato form textarea {
+    height: 300px;
+}
+
+#secao-contato form input[type=text]:focus, #secao-contato form input[type=email]:focus, #secao-contato form textarea:focus {
+    border-color: #E25B8F;
+} 
+
+/* Footer */
+footer  {
+    color: #8B8AA2;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    padding: 100px;
+
+    text-align: center;
 }
