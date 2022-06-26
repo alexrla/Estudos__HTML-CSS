@@ -114,6 +114,7 @@ a   {
 section {
     padding-left: 50px;
 }
+
 /* Content - Seção Início */
 #secao-inicio   {
     padding-left: 0;
@@ -141,11 +142,11 @@ section {
     height: 600px;
 }
 
-.secaoinicio-content    {
+#secao-inicio  .secao-content  {
     padding-left: 50px;
 }
 
-.secaoinicio-content h2     {
+.secao-content h2, .secao-content h2      {
     font-weight: 500;
 
     margin-top: 70px;
@@ -153,7 +154,7 @@ section {
     font-size: 48px;
 }
 
-.secaoinicio-content .mini-banner   {
+.secao-content .mini-banner   {
     background-image: url(../img/banner3.jpg);
 
     background-position: center;
@@ -169,7 +170,7 @@ section {
     width: 300px;
 }
 
-.secaoinicio-content .description   {
+.secao-content .description   {
     display: flex;
 
     flex-direction: column;
@@ -183,7 +184,7 @@ section {
     position: absolute;
 }
 
-.secaoinicio-content .description p     {
+.secao-content .description p    {
     font-size: 18px;
 
     line-height: 2;
@@ -193,7 +194,7 @@ section {
     text-align: justify;
 }
 
-.secaoinicio-content .description a, form input[type=submit]     {
+.secao-content .description a, form input[type=submit]     {
     background-color: #FFFFFF;
 
     border: 2px solid #E25B8F;
@@ -217,8 +218,112 @@ section {
     width: 200px;
 }
 
-.secaoinicio-content .description a:hover, form input[type=submit]:hover   {
+.secao-content .description a:hover, form input[type=submit]:hover   {
     background-color: #E25B8F;
 
     color: #FFFFFF;
+}
+
+/* Content - Seção Sobre nós */
+#secao-sobreNos .mini-banner  {
+    background-image: url(../img/banner4.jpg);
+
+    float: right;
+
+    margin-right: 50px;
+}
+
+#secao-sobreNos .description    {
+    left: 25px;
+
+    width: calc(100% - 400px);
+}
+
+/* Content - Seção Doces */
+#secao-doces1 h2, #secao-doces2 h2, #secao-doces3 h2    {
+    font-size: 36px;
+
+    font-weight: 500;
+}
+
+#secao-doces1, #secao-doces2, #secao-doces3    {
+    padding-right: 50px;
+
+    margin-bottom: 80px;
+}
+
+.gallery    {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.gallery-image  {
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    height: 200px;
+}
+
+#image-1, #image-2, #image-3, #image-4, #image-5     {
+    width: 18.8%;
+}
+
+#image-1    {
+    background-image: url(../img/galeria1.jpg);
+}
+
+#image-2    {
+    background-image: url(../img/galeria2.jpg);
+}
+
+#image-3   {
+    background-image: url(../img/galeria3.jpg);
+}
+
+#image-4    {
+    background-image: url(../img/galeria4.jpg);
+}
+
+#image-5    {
+    background-image: url(../img/galeria5.jpg);
+}
+
+#image-6, #image-7, #image-8     {
+    width: 32.3%;
+}
+
+#image-6    {
+    background-image: url(../img/galeria6.jpg);
+}
+
+#image-7   {
+    background-image: url(../img/galeria7.jpg);
+}
+
+#image-8    {
+    background-image: url(../img/galeria8.jpg);
+}
+
+#image-9, #image-10, #image-11, #image-12     {
+    width: 23.9%;
+}
+
+#image-9    {
+    background-image: url(../img/galeria9.jpg);
+}
+
+#image-10   {
+    background-image: url(../img/galeria10.jpg);
+}
+
+#image-11   {
+    background-image: url(../img/galeria11.jpg);
+}
+
+#image-12   {
+    background-image: url(../img/galeria12.jpg);
 }
